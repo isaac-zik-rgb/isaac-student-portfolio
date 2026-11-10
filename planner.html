@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Academic Planner | Isaac Okechukwu</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- JavaScript file -->
+    <script src="js/planner.js" defer></script>
+</head>
+
+<body>
+
+    
+     <!-- Website Header -->
+    <header>
+        <div class="header-container">
+
+            <div class="logo">
+                <h2>Isaac<span>.</span></h2>
+            </div>
+
+            <!-- Profile at the top right -->
+            <div class="profile">
+                <img src="images/profile.png"
+                     alt="Isaac Okechukwu Profile Picture">
+                <h4>Isaac Okechukwu</h4>
+            </div>
+
+        </div>
+
+        <!-- Navigation Menu -->
+        <nav>
+            <ul>
+                <li><a href="index.html" >Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="planner.html" class="active">Academic Planner</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+
+
+    <main>
+
+        <section class="page-intro">
+            <h1>My Academic Planner</h1>
+
+            <p>
+                Organise your academic activities, manage assignments
+                and keep track of your learning goals.
+            </p>
+        </section>
+
+
+        <section class="planner-section">
+
+            <div class="planner-container">
+
+                <h2>Manage Your Tasks</h2>
+
+                <p class="planner-description">
+                    Add your academic activities below and track your progress.
+                </p>
+
+                <!-- Task input form -->
+                <form id="task-form" class="task-form">
+
+                    <input
+                        type="text"
+                        id="task-input"
+                        placeholder="Enter an academic task..."
+                        required
+                    >
+
+                    <button type="submit" class="btn">
+                        Add Task
+                    </button>
+
+                </form>
+
+                <!-- Task statistics -->
+                <div class="task-statistics">
+
+                    <div class="stat-card">
+                        <h3 id="total-tasks">0</h3>
+                        <p>Total Tasks</p>
+                    </div>
+
+                    <div class="stat-card">
+                        <h3 id="completed-tasks">0</h3>
+                        <p>Completed</p>
+                    </div>
+
+                    <div class="stat-card">
+                        <h3 id="pending-tasks">0</h3>
+                        <p>Pending</p>
+                    </div>
+
+                </div>
+
+                <!-- Task list -->
+                <div class="task-list-container">
+
+                    <h3>My Tasks</h3>
+
+                    <ul id="task-list">
+                        <!-- JavaScript will insert tasks here -->
+                    </ul>
+
+                    <p id="empty-message">
+                        You have no tasks yet. Add your first task!
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+   <!-- Footer -->
+    <footer>
+
+        <p>
+            &copy; 2026 Isaac Okechukwu.
+            All Rights Reserved.
+        </p>
+
+        <p>Software Engineering | MIVA Open University</p>
+
+    </footer>
+
+</body>
+</html>
